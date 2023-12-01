@@ -7,6 +7,7 @@ let nameTxt = document.getElementById("nameTxt");
 let removeBtn = document.getElementById("removeBtn");
 
 let nameArray = [];
+// local storage
 if(localStorage.getItem("names")){
     nameArray = JSON.parse(localStorage.getItem("names"));
 }
