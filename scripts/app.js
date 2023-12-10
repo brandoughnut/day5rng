@@ -12,6 +12,7 @@ if(localStorage.getItem("names")){
     nameArray = JSON.parse(localStorage.getItem("names"));
 }
 
+// localStorage.setItem("names", JSON.stringify(nameArray)); updates the local storage
 addBtn.addEventListener('click', function() {
     nameArray.push(nameInput.value);
     nameInput.value = "";
